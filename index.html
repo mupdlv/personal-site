@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan Villanueva - Web Developer</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,15 +15,15 @@
   </head>
   <body>
     <section id="header">
-      <a href="#" class="logo-link"
+      <a href="#hero" class="logo-link"
         ><img src="./images/logo.png" alt="logo" class="logo"
       /></a>
       <nav>
         <ul>
-          <a href=""><li>Home</li></a>
-          <a href=""><li>About</li></a>
-          <a href=""><li>Projects</li></a>
-          <a href="" class="nav-contact"><li>Contact</li></a>
+          <a href="#hero"><li>Home</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#contact" class="nav-contact"><li>Contact</li></a>
         </ul>
       </nav>
     </section>
@@ -35,7 +36,12 @@
           >
           <br />a <span class="web-developer">web developer</span>.
         </h1>
-        <a href="https://mupdlv.github.io/online-resume/" class="button">View CSV</a>
+        <a
+          href="https://mupdlv.github.io/online-resume/"
+          target="_blank"
+          class="button"
+          >View CSV</a
+        >
       </div>
       <div class="hero-right">
         <img
@@ -90,12 +96,20 @@
     <section id="contact">
       <h2>Contact Me</h2>
       <p class="contact-text">Let's work together or chat!</p>
-      <a href="https://twitter.com/mupdlv" class="social-link"
-        ><img
-          src="./images/twitter-icon.png"
-          alt="twitter-icon"
-          class="social-icon"
-      /></a>
+      <div class="contact-gallery">
+        <a href="mailto: mupdlv@outlook.com" class="contact-link"
+          ><img
+            src="./images/email-icon.png"
+            alt="email-icon"
+            class="contact-icon"
+        /></a>
+        <a href="https://twitter.com/mupdlv" class="contact-link"
+          ><img
+            src="./images/twitter-icon.png"
+            alt="twitter-icon"
+            class="contact-icon"
+        /></a>
+      </div>
     </section>
 
     <section id="footer">
