@@ -3,6 +3,7 @@
     font-size: 16px;
     font-family: 'Oxygen', sans-serif;
     color: #000000;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -13,15 +14,6 @@ html, body {
     padding: 0;
     overflow-x: hidden;
 }
-
-/* html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-} */
 
 /* Header */
 #header {
@@ -75,7 +67,6 @@ li {
 }
 
 .hero-left {
-    /* background-color: red; */
     width: 50%;
     padding-left: 300px;
     justify-content: center;
@@ -172,6 +163,7 @@ p {
 
 .project-name {
     font-weight: 800;
+    line-height: 1;
 }
 
 .project-image {
@@ -193,11 +185,17 @@ p {
     margin-top: -25px;
 }
 
-.social-link {
+.contact-link {
     border: none;
 }
 
-.social-icon {
+.contact-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-icon {
     height: 50px;
 }
 
@@ -209,4 +207,27 @@ p {
 
 .copyright-text {
     font-size: 0.75rem;
+}
+
+/* Media Queries */
+@media(max-width: 1400px) {
+    .hero-left {
+        padding-left: 200px;
+    }
+    #about {
+        width: 45%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .hero-left {
+        padding-left: 150px;
+    }
+    #about {
+        width: 50%;
+    }
+    .project-gallery {
+        flex-direction: column;
+        gap: 50px;
+    }
 }
