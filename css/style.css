@@ -49,6 +49,7 @@ a:hover {
 ul {
     list-style: none;
     display: flex;
+    padding-inline-start: 0;
 }
 
 .nav-link {
@@ -237,6 +238,9 @@ p {
 }
 
 @media (max-width: 1100px) {
+    .hero-image {
+        height: 400px;
+    }
     #about {
         width: 55%;
     }
@@ -257,13 +261,13 @@ p {
     .hero-right {
         text-align: center;
     }
-    .hero-image {
-        height: 400px;
-    }
     .hero-left {
         padding-left: 0;
         width: 60%;
         text-align: center;
+    }
+    .hero-right {
+        width: 60%;
     }
     #about {
         margin: 50px auto;
@@ -289,5 +293,103 @@ p {
     #contact {
         width: 60%;
         margin: 25px auto 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-left, .hero-right, #about, .project-gallery {
+        width: 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-left, .hero-right, #about, .project-gallery {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #header {
+        flex-direction: column;
+        justify-content: center;
+        height: 135px;
+        padding: 0;
+    }
+    .logo {
+        margin-bottom: -15px;
+    }
+    .hero-left, .hero-right, #about, .project-gallery {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .dylan-villanueva {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #header {
+        height: 260px;
+        padding: 0;
+    }
+    .logo {
+        margin-top: 25px;
+    }
+    li > a {
+        padding: 0;
+        border-right: none;
+        border-bottom: 2px solid #004aad;
+    }
+    li > a:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 255, .25);
+        border: none;
+        border-radius: 10px;
+    }
+    .nav-link {
+        padding-bottom: 5px;
+    }
+    ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    #hero {
+        height: 750px;
+    }
+    h1, .web-developer {
+        font-size: 2.8rem;
+    }
+    .dylan-villanueva {
+        font-size: 3rem;
+    }
+    .hero-image {
+        height: 300px;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+    #projects {
+        padding: 10px 0;
+    }
+    .contact-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero {
+        height: 700px;
+    }
+    h1, .web-developer {
+        font-size: 2.5rem;
+    }
+    .dylan-villanueva {
+        font-size: 2.75rem;
     }
 }
